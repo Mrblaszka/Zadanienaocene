@@ -33,5 +33,11 @@ class MainActivity : AppCompatActivity() {
             suma = liczba1 + liczba2
             findViewById<TextView>(R.id.wyswietlanie).text = suma.toString()
         }
+        findViewById<Button>(R.id.dopisz).setOnClickListener{
+            findViewById<TextView>(R.id.wyswietlanie).text =
+                findViewById<TextView>(R.id.wyswietlanie).text.toString() +
+                findViewById<EditText>(R.id.wejscie).text.toString()
+
+        }
     }
 }
